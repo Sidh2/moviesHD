@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylefeedback.css">
+    <title>Streaming Platform - Feedback</title>
+</head>
+<body>
+    <div class="container">
+        <div class="video-preview">
+            <!-- Replace 'video-source.mp4' with your actual video source -->
+            <video autoplay muted loop>
+                <source src="video-source.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="feedback-container">
+            <form class="feedback-form">
+                <h1>Give Us Your Feedback</h1>
+                
+                <label for="feedback-type">Feedback Type:</label>
+                <select id="feedback-type" name="feedback-type" required>
+                    <option value="bug">Bug Report</option>
+                    <option value="feature">Feature Request</option>
+                    <option value="general">General Feedback</option>
+                </select>
+                
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

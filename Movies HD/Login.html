@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>Streaming Platform - Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="video-preview">
+            <!-- Replace 'video-source.mp4' with your actual video source -->
+            <video autoplay muted loop>
+                <source src="video-source.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="login-container">
+            <form class="login-form">
+                <h1>WELCOME BACK!</h1>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
